@@ -1,0 +1,29 @@
+* {
+  box-sizing: 0;
+  margin:0;
+  padding: 0;
+  font-family: 'Encode Sans Expanded',
+  sans-serif;
+}
+
+::-webkit-scrollbar-track{
+	background-color: transparent;
+}
+
+::-webkit-scrollbar{
+	width: 15px;
+	background-color: #000;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #910303;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ff0000;
+  border-radius: 5px;
+  box-shadow: 2px 2px 15px #ff0000;
+}
+body {
+  display: block !important;
+}
