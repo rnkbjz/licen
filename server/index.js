@@ -21,7 +21,7 @@ const username = req.body.username;
 const password = req.body.password;
 
 db.query(
-    "SELECT 1 FROM users WHERE username = '${username}'",
+    `SELECT 1 FROM users WHERE username = '${username}'`,
     (err, result) => {
       if (result) {
         if (result.length > 0) {

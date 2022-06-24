@@ -18,7 +18,7 @@ function Login() {
     const [LoginStatus, setLoginStatus] = useState('')
 
     const login = () => {
-        axios.post('http://localhost:3001/login?#',{username: usernameL, password: passwordL}).then((response) => {
+        axios.post('http://localhost:3001/login',{username: usernameL, password: passwordL}).then((response) => {
 
             if (response.data.message) {
                setLoginStatus(response.data.message)
